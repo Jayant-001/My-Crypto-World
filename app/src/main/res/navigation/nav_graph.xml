@@ -20,8 +20,8 @@
         android:label="fragment_watchlist"
         tools:layout="@layout/fragment_watchlist" />
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.jayant.mycryptoworld.fragments.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        android:id="@+id/marketFragment"
+        android:name="com.jayant.mycryptoworld.fragments.MarketFragment"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" />
 </navigation>

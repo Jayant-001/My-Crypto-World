@@ -25,7 +25,7 @@
         android:elevation="12dp"
         app:iconMargin="6dp"
         app:iconSize="20dp"
-        app:backgroundColor="@color/royal_blue_dark"
+        app:backgroundColor="@color/main_color"
         app:indicatorRadius="8dp"
         app:itemFontFamily="@font/nunito_medium"
         app:textSize="12sp"

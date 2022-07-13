@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.jayant.mycryptoworld.R
-class ProfileFragment : Fragment() {
+class MarketFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -14,7 +14,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_market, container, false)
     }
 
 

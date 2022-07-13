@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/active_button.xml" value="0.15" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/detail_content_bg.xml" value="0.15" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.165" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/market_content_bg.xml" value="0.15" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/search_field_bg.xml" value="0.15" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/drawable/top_gainers_bg.xml" value="0.214" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/currency_item_layout.xml" value="0.4568345323741007" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_currency_details.xml" value="0.23958333333333334" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_home.xml" value="0.11302083333333333" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_market.xml" value="0.23958333333333334" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_portfolio.xml" value="0.2006340579710145" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_profile.xml" value="0.2006340579710145" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_top_gain_loss.xml" value="0.23958333333333334" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/fragment_watchlist.xml" value="0.2006340579710145" />
+        <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/layout/top_currency_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Android/MyCryptoWorld/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>

@@ -15,4 +15,8 @@
     <color name="green">#4FC281</color>
     <color name="red">#D6455D</color>
     <color name="white1">#ECF0F1</color>
+
+    <color name="main_color">#1E193B</color>
+    <color name="item_color">#454071</color>
+    <color name="main_bg_color">#312B4F</color>
 </resources>

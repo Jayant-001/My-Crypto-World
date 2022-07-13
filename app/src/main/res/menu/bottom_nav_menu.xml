@@ -10,6 +10,13 @@
         app:showAsAction="always" />
 
     <item
+        android:id="@+id/marketFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="Market"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/portfolioFragment"
         android:enabled="true"
         android:icon="@drawable/ic_bucket"
@@ -22,13 +29,5 @@
         android:icon="@drawable/ic_watchlist"
         android:title="Watchlist"
         app:showAsAction="always" />
-
-    <item
-        android:id="@+id/profileFragment"
-        android:enabled="true"
-        android:icon="@drawable/ic_profile"
-        android:title="Profile"
-        app:showAsAction="always" />
-
 
 </menu>
