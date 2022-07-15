@@ -7,7 +7,6 @@ import com.jayant.mycryptoworld.fragments.TopGainLossFragment
 
 class TopGainLossAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
-
         return 2
     }
 
@@ -19,6 +18,5 @@ class TopGainLossAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
         fragment.arguments = bundle
         return fragment
     }
-
 
 }

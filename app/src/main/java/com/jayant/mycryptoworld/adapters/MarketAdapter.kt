@@ -10,9 +10,11 @@ import com.bumptech.glide.Glide
 import com.jayant.mycryptoworld.R
 import com.jayant.mycryptoworld.databinding.CurrencyItemLayoutBinding
 import com.jayant.mycryptoworld.fragments.HomeFragmentDirections
+import com.jayant.mycryptoworld.fragments.MarketFragmentDirections
 import com.jayant.mycryptoworld.models.CryptoCurrency
 
-class MarketAdapter(var context: Context, var list: List<CryptoCurrency>) : RecyclerView.Adapter<MarketAdapter.MarketViewHolder>() {
+class MarketAdapter(var context: Context, var list: List<CryptoCurrency>, val current: String) :
+    RecyclerView.Adapter<MarketAdapter.MarketViewHolder>() {
     class MarketViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         var binding = CurrencyItemLayoutBinding.bind(view)
@@ -20,7 +22,9 @@ class MarketAdapter(var context: Context, var list: List<CryptoCurrency>) : Recy
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MarketViewHolder {
 
-        return MarketViewHolder(LayoutInflater.from(context).inflate(R.layout.currency_item_layout, parent, false))
+        return MarketViewHolder(
+            LayoutInflater.from(context).inflate(R.layout.currency_item_layout, parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: MarketViewHolder, position: Int) {
@@ -34,31 +38,43 @@ class MarketAdapter(var context: Context, var list: List<CryptoCurrency>) : Recy
             .thumbnail(Glide.with(context).load(R.drawable.spinner))
             .into(holder.binding.currencyImageView)
 
-
         Glide.with(context)
             .load("https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/" + item.id + ".png")
             .thumbnail(Glide.with(context).load(R.drawable.spinner))
             .into(holder.binding.currencyChartImageView)
 
+        holder.binding.currencyPriceTextView.text =
+            "${String.format("$%.04f", item.quotes[0].price)}"
 
-        holder.binding.currencyPriceTextView.text = "${String.format("$%.04f", item.quotes[0].price)}"
-
-        if(item.quotes!![0].percentChange24h > 0) {
+        if (item.quotes!![0].percentChange24h > 0) {
 
             holder.binding.currencyChangeTextView.setTextColor(context.resources.getColor(R.color.green))
-            holder.binding.currencyChangeTextView.text = "+${String.format("%.02f", item.quotes[0].percentChange24h)}%"
-        }
-        else {
+            holder.binding.currencyChangeTextView.text =
+                "+${String.format("%.02f", item.quotes[0].percentChange24h)}%"
+        } else {
 
             holder.binding.currencyChangeTextView.setTextColor(context.resources.getColor(R.color.red))
-            holder.binding.currencyChangeTextView.text = "${String.format("%.02f", item.quotes[0].percentChange24h)}%"
+            holder.binding.currencyChangeTextView.text =
+                "${String.format("%.02f", item.quotes[0].percentChange24h)}%"
         }
 
-        holder.itemView.setOnClickListener {
-            findNavController(it).navigate(
-                HomeFragmentDirections.actionHomeFragmentToCurrencyDetailsFragment(item)
-            )
+        if (current == "home") {
+            holder.itemView.setOnClickListener {
+                findNavController(it).navigate(
+                    HomeFragmentDirections.actionHomeFragmentToCurrencyDetailsFragment(item)
+                )
+
+            }
         }
+        if (current == "market") {
+            holder.itemView.setOnClickListener {
+                findNavController(it).navigate(
+                    MarketFragmentDirections.actionMarketFragmentToCurrencyDetailsFragment(item)
+                )
+            }
+        }
+
+
     }
 
     override fun getItemCount(): Int {

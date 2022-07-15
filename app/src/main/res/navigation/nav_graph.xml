@@ -27,7 +27,11 @@
         android:id="@+id/marketFragment"
         android:name="com.jayant.mycryptoworld.fragments.MarketFragment"
         android:label="fragment_market"
-        tools:layout="@layout/fragment_market" />
+        tools:layout="@layout/fragment_market" >
+        <action
+            android:id="@+id/action_marketFragment_to_currencyDetailsFragment"
+            app:destination="@id/currencyDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/currencyDetailsFragment"
         android:name="com.jayant.mycryptoworld.fragments.CurrencyDetailsFragment"

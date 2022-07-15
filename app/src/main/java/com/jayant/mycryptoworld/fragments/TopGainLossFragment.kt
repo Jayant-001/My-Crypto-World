@@ -60,7 +60,7 @@ class TopGainLossFragment : Fragment() {
                             list.add(dataItem[i])
                         }
 
-                        binding.topGainLoseRecyclerView.adapter = MarketAdapter(requireContext(), list)
+                        binding.topGainLoseRecyclerView.adapter = MarketAdapter(requireContext(), list, "home")
                     }
                     else {
                         list.clear()
@@ -68,9 +68,8 @@ class TopGainLossFragment : Fragment() {
                             list.add(dataItem[dataItem.size-i-1])
                         }
 
-                        binding.topGainLoseRecyclerView.adapter = MarketAdapter(requireContext(), list)
+                        binding.topGainLoseRecyclerView.adapter = MarketAdapter(requireContext(), list, "home")
                     }
-
 
                 }
             }
