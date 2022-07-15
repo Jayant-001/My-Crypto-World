@@ -47,11 +47,11 @@ class CurrencyDetailsFragment : Fragment() {
 
             if(b) {
                 binding.detailChart.visibility = VISIBLE
-                Toast.makeText(requireContext(), "Chart on", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Chart ON", Toast.LENGTH_SHORT).show()
             }
             else {
                 binding.detailChart.visibility = GONE
-                Toast.makeText(requireContext(), "Chart off", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Chart OFF", Toast.LENGTH_SHORT).show()
             }
         }
 
