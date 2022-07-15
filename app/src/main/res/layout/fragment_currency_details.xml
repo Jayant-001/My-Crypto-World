@@ -13,9 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="12dp"
-        android:paddingTop="8dp"
+        android:paddingVertical="8dp"
         android:paddingRight="12dp"
-        android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -59,9 +58,8 @@
         android:id="@+id/detailPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
+        android:paddingStart="18dp"
+        android:paddingVertical="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detailAppbar">
@@ -81,9 +79,9 @@
             android:id="@+id/detailPriceTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="28dp"
             android:textColor="@color/white"
-            android:textSize="26sp"
+            android:textSize="24sp"
             app:layout_constraintStart_toEndOf="@+id/detailImageView"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="$108.56" />
@@ -99,13 +97,26 @@
 
         <ImageView
             android:id="@+id/detailImageView"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ImageContrastCheck"
             tools:srcCompat="@tools:sample/avatars" />
+
+        <Switch
+            android:id="@+id/switch1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.Switch"
+            android:layout_marginEnd="6dp"
+            android:checked="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            android:text="Chart" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -227,6 +238,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detailChart">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency Details"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/detailRecyclerView"
