@@ -57,6 +57,10 @@ class CurrencyDetailsFragment : Fragment() {
             }
         }
 
+        binding.addWatchlistButton.setOnClickListener {
+            Log.d("jayant", "onCreateView: ${data.symbol}")
+        }
+
         return binding.root
     }
 
