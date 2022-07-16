@@ -27,6 +27,11 @@ class MarketAdapter(var context: Context, var list: List<CryptoCurrency>, val cu
         )
     }
 
+    fun updateSearchData(dataList : List<CryptoCurrency>) {
+        list = dataList
+        notifyDataSetChanged()
+    }
+
     override fun onBindViewHolder(holder: MarketViewHolder, position: Int) {
 
         val item = list[position]
