@@ -112,6 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
             android:checked="true"
+            android:theme="@style/Theme.switchBg"
             android:text="Chart"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
@@ -251,8 +252,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:theme="@style/Theme.textStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -268,14 +269,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ranking"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_ranking"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="1"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -290,14 +292,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Circulating Supply"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_circular_sypply"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="19094481"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -312,14 +315,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Total Supply"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_total_supply"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="19094481"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -334,14 +338,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Max Supply"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_max_supply"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="19094481"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -356,14 +361,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Market Capt."
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_market_capt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="400110515144"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -378,14 +384,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 1H"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_change_1h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -400,14 +407,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 24H"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_change_24h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -422,14 +430,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 7D"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_change_7D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -444,14 +453,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 30D"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+
+                        android:id="@+id/text_change_30D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -466,14 +477,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 60D"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_change_60D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -488,14 +500,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Change in 90D"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_change_90D"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -510,14 +523,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dominance"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/text_dominance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="22%"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -532,20 +546,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tags"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="19094481"
-                        android:textSize="22sp" />
 
                 </RelativeLayout>
 
-
             </LinearLayout>
-
 
             <!--        <androidx.recyclerview.widget.RecyclerView-->
             <!--            android:id="@+id/detailRecyclerView"-->

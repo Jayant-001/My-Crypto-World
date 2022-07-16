@@ -38,6 +38,8 @@ class CurrencyDetailsFragment : Fragment() {
         loadChart(data)
 
         setButtonOnClick(data)
+        
+        setBottomDetails(data)
 
         binding.backStackButton.setOnClickListener {
             Navigation.findNavController(it).navigateUp()
@@ -56,6 +58,22 @@ class CurrencyDetailsFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    private fun setBottomDetails(data: CryptoCurrency) {
+
+        binding.textRanking.text = data.cmcRank.toString()
+        binding.textCircularSypply.text = data.circulatingSupply.toString()
+        binding.textTotalSupply.text = data.totalSupply.toString()
+        binding.textMaxSupply.text = data.maxSupply.toString()
+        binding.textMarketCapt.text = data.quotes[0].marketCap.toString()
+        binding.textChange1h.text = "${String.format("%.02f", data.quotes[0].percentChange1h)}%"
+        binding.textChange24h.text = "${String.format("%.02f", data.quotes[0].percentChange24h)}%"
+        binding.textChange7D.text = "${String.format("%.02f", data.quotes[0].percentChange7d)}%"
+        binding.textChange30D.text = "${String.format("%.02f", data.quotes[0].percentChange30d)}%"
+        binding.textChange60D.text = "${String.format("%.02f", data.quotes[0].percentChange60d)}%"
+        binding.textChange90D.text = "${String.format("%.02f", data.quotes[0].percentChange90d)}%"
+
     }
 
     private fun setButtonOnClick(item: CryptoCurrency) {
